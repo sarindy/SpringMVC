@@ -17,6 +17,8 @@
 	<context:component-scan base-package="org.sarindy.helloController" />
 	<mvc:resources mapping="/bootstrap/css/**" location="/WEB-INF/bootstrap/css/" />
 	<mvc:resources mapping="/bootstrap/js/**" location="/WEB-INF/bootstrap/js/" />
+	<mvc:resources mapping="/bootstrap/css/**" location="/WEB-INF/bootstrap/css/" />
+	<mvc:resources mapping="/bootstrap/fonts/**" location="/WEB-INF/bootstrap/fonts/" />
 	<mvc:annotation-driven />
 
 

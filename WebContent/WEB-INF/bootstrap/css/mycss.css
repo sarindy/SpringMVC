@@ -1,0 +1,15 @@
+@CHARSET "ISO-8859-1";
+
+h1{
+	font-family: "DaunPenh" !important;
+	font-size: 24px;
+}
+
+.myh1{
+	font-family: "DaunPenh" !important;
+	font-size: 44px;
+}
+
+.colorred{
+	color:red !important;
+}	
