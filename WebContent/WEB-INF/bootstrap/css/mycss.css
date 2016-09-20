@@ -6,10 +6,21 @@ h1{
 }
 
 .myh1{
-	font-family: "DaunPenh" !important;
+	font-family: "Kh Battambang" !important;
 	font-size: 44px;
 }
 
 .colorred{
 	color:red !important;
 }	
+
+.khmerHeader {
+	font-family:"Kh Battambang" !important;
+	font-size: 18px !important;
+	font-weight: bold !important;
+}
+
+.khmerH2{
+	font-family:"Kh Battambang" !important;
+	font-size: 16px !important;
+}

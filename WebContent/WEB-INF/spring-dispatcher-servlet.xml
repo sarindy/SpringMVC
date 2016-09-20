@@ -20,6 +20,8 @@
 	<mvc:resources mapping="/bootstrap/css/**" location="/WEB-INF/bootstrap/css/" />
 	<mvc:resources mapping="/bootstrap/fonts/**" location="/WEB-INF/bootstrap/fonts/" />
 	<mvc:annotation-driven />
+	
+	<context:component-scan base-package="org.sarindy" />
 
 
 

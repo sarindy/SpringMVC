@@ -19,7 +19,9 @@
 
 <body>
 
-	<h1>${myWelcomeMessage}</h1>
+
+
+	<h1 class='myh1' style="font-size: 12px;">${myWelcomeMessage}</h1>
 	<h3 class='myh1' style="font-size: 74px;">fdkjaskdfaslkdjflaks</h3>
 
 	<div class="input-group">
