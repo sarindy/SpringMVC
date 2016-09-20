@@ -12,7 +12,8 @@
 	<h1>STUDENT ADMISSION FORM FOR ENGINNERING COURSE</h1>
 
 	<div>
-		<form action="/SpringMVC/submitAdmissionFormTu11.html" method="POST">
+		<!-- <form action="/SpringMVC/submitAdmissionFormTu11.html" method="POST"> -->
+		<form action="/SpringMVC/submitAdmissionFormTu11ModelAtt.html" method="POST">
 			<p>
 				Student's Name : <input type="text" name="studentName" />
 			</p>

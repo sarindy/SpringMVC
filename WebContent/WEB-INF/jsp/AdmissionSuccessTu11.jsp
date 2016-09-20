@@ -8,8 +8,9 @@
 <title>សូមស្វាគមន៏</title>
 </head>
 <body>
-
+<h1>${msg1}</h1>
 <table>
+
 <tr>
 	<td>Student Name :</td>
 	<td>${student.studentName}</td> <!-- we can display the class model here -->
