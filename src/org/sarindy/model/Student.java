@@ -3,12 +3,23 @@ package org.sarindy.model;
 import java.util.Date;
 import java.util.List;
 
+import javax.validation.constraints.Size;
+
+
 public class Student {
 
 	private String studentName;
+	
+	@Size(min=2,max=5)
 	private String studentHobbies;
+	
+	
 	private long studentMobile;
+	
+	
 	private Date studentDOB;
+	
+	
 	private List<String> studentSkill;
 
 	private Address address;

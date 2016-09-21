@@ -1,5 +1,9 @@
 package org.sarindy.Tu13;
 
+
+
+import javax.validation.Valid;
+
 import org.sarindy.model.Student;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -25,7 +29,7 @@ public class Tutorial13UserDefineType {
 	}
 	
 	@RequestMapping(value="/submitAdmissionFormTu13.html",method = RequestMethod.POST)
-	public ModelAndView submitAdmissionFormModelAtt(@ModelAttribute("student") Student student,BindingResult bindingResult){
+	public ModelAndView submitAdmissionFormModelAtt(@Valid @ModelAttribute("student") Student student,BindingResult bindingResult){
 		
 		/*-- Student student = new Student();
 		student.setStudentName(name);  //name variable here are from the @RequestParam
