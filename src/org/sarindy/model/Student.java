@@ -3,20 +3,29 @@ package org.sarindy.model;
 import java.util.Date;
 import java.util.List;
 
+import javax.validation.constraints.Max;
+import javax.validation.constraints.Past;
+import javax.validation.constraints.Pattern;
 import javax.validation.constraints.Size;
+
+import org.sarindy.Tu13.IsValidHobbiesAnotation;
 
 
 public class Student {
 
+	@Pattern(regexp="[^0-9]*") //This mean this name not to allow number and those sign
+	@Size(max=10)
 	private String studentName;
 	
-	@Size(min=2,max=5)
+	@Size(min=2,max=5) //this will got the message from the properties file.
+	@IsValidHobbiesAnotation//This com from 2 classes in HobbyValidator.java and IsValidHobbiesAnotation.java
 	private String studentHobbies;
 	
-	
+	@Max(222)//Number can not be greater than 222
 	private long studentMobile;
 	
 	
+	@Past //The date can not future
 	private Date studentDOB;
 	
 	
