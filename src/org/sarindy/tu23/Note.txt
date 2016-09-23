@@ -1,0 +1,7 @@
+Note:
+
+Interceptor: this application should works on all week days except for Sunday.
+
+
+
+

@@ -14,6 +14,8 @@ import javax.validation.Payload;
 @Target({ ElementType.FIELD })
 @Retention(RetentionPolicy.RUNTIME)
 public @interface IsValidHobbiesAnotation {
+	
+	String myListOfHobbies() default "Music|Sex";
 
 	String message() default "Please Provide the correct hobbies";
 	Class<?>[] groups() default{};

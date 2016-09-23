@@ -18,7 +18,7 @@ public class Student {
 	private String studentName;
 	
 	@Size(min=2,max=5) //this will got the message from the properties file.
-	@IsValidHobbiesAnotation//This com from 2 classes in HobbyValidator.java and IsValidHobbiesAnotation.java
+	@IsValidHobbiesAnotation(myListOfHobbies="Music|Sex|Movies")   //This com from 2 classes in HobbyValidator.java and IsValidHobbiesAnotation.java
 	private String studentHobbies;
 	
 	@Max(222)//Number can not be greater than 222

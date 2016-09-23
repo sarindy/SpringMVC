@@ -4,11 +4,13 @@ import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;
 
 public class HobbyValidator implements ConstraintValidator<IsValidHobbiesAnotation, String> {
+	
+	private String myListOfHobbies;
+	
 
 	@Override
-	public void initialize(IsValidHobbiesAnotation arg0) {
-		// TODO Auto-generated method stub
-
+	public void initialize(IsValidHobbiesAnotation isValidHobbiesAnnotation) {
+		this.myListOfHobbies=isValidHobbiesAnnotation.myListOfHobbies();
 	}
 
 	@Override
@@ -19,7 +21,7 @@ public class HobbyValidator implements ConstraintValidator<IsValidHobbiesAnotati
 
 		}
 
-		if (studentHobbies.matches("Music|Sex")) {
+		if (studentHobbies.matches(this.myListOfHobbies)) {
 			return true;
 
 		} else {

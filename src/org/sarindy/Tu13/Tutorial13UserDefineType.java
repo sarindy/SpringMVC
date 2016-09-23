@@ -28,6 +28,12 @@ public class Tutorial13UserDefineType {
 		return model;
 	}
 	
+	@RequestMapping(value = "/login.html", method = RequestMethod.GET)
+	public ModelAndView getSignon() {
+		ModelAndView model = new ModelAndView("signon");
+		return model;
+	}
+	
 	@RequestMapping(value="/submitAdmissionFormTu13.html",method = RequestMethod.POST)
 	public ModelAndView submitAdmissionFormModelAtt(@Valid @ModelAttribute("student") Student student,BindingResult bindingResult){
 		
