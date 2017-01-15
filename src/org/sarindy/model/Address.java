@@ -8,6 +8,8 @@ public class Address {
 	public String getHomeNum() {
 		return homeNum;
 	}
+	
+	
 	public void setHomeNum(String homeNum) {
 		this.homeNum = homeNum;
 	}
