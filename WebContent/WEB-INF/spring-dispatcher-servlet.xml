@@ -25,14 +25,12 @@
 	<context:component-scan base-package="org.sarindy" />
 
 	<mvc:interceptors> <!-- Hey Spring Please process this class as interceptor whenever has a request -->
-	<!-- This interceptor below is to specific from what request path to invoke this interceptor -->
+		<!-- This interceptor below is to specific from what request path to invoke 
+			this interceptor -->
 		<mvc:interceptor>
 			<mvc:mapping path="/AdmissionFormTu13.html" />
 			<bean class="org.sarindy.tu23.DayOfWeekAccessInterceptor" />
 		</mvc:interceptor>
-		
-		
-
 	</mvc:interceptors>
 
 
@@ -53,7 +51,6 @@
 		<property name="basename" value="/WEB-INF/studentMessage" />
 		<property name="cacheSeconds" value="1" /><!-- This means after 
 			we change the properties files we don't need to restart the server -->
-
 	</bean>
 
 
